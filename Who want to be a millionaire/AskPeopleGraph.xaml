@@ -1,0 +1,56 @@
+﻿<Window x:Class="Who_want_to_be_a_millionaire.AskPeopleGraph"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Who_want_to_be_a_millionaire"
+        mc:Ignorable="d"
+        Title="AskPeopleGraph" Height="257.931" Width="367.586">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <UniformGrid Rows="4">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                    <ColumnDefinition Width="8*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Name="ButtonFirst" Margin="5 5 0 5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Button>
+                <Rectangle Name="RectangleFirst"  Grid.Column="1" Fill="DarkBlue" Margin="0 5 0 5" HorizontalAlignment="Left" Width="240"></Rectangle>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                    <ColumnDefinition Width="8*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Name="ButtonSecond" Margin="5 5 0 5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Button>
+                <Rectangle Name="RectangleSecond" Grid.Column="1" Fill="DarkBlue" Margin="0 5 0 5" HorizontalAlignment="Left" Width="240"></Rectangle>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                    <ColumnDefinition Width="8*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Name="ButtonThird" Margin="5 5 0 5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Button>
+                <Rectangle Name="RectangleThird" Grid.Column="1" Fill="DarkBlue" Margin="0 5 0 5" HorizontalAlignment="Left" Width="240"></Rectangle>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                    <ColumnDefinition Width="8*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Name="ButtonFourth" Margin="5 5 0 5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Button>
+                <Rectangle Name="RectangleFourth" Grid.Column="1" Fill="DarkBlue" Margin="0 5 0 5" HorizontalAlignment="Left" Width="240"></Rectangle>
+            </Grid>
+        </UniformGrid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="9*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Margin="3 0 3 3" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="9" Click="ButtonBase_OnClick">OK</Button>
+        </Grid>
+    </Grid>
+</Window>
